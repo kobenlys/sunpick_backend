@@ -1,0 +1,53 @@
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle-cache/
+
+### Maven (사용하지 않더라도 안전하게 무시) ###
+target/
+
+### IDE ###
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+HELP.md
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Files ###
+application.properties
+application.yaml
+application.yml
+
+### Logs ###
+*.log
+
+### Application ###
+.env
+*.h2.db
+*.sqlite
+*.db
+*.mv.db
+
+### Test ###
+test-output/
+surefire-reports/
+
+### Others ###
+node_modules/
+dist/
+coverage/
+
+# Lombok generated metadata
+lombok.config
