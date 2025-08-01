@@ -15,8 +15,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "provided_coupon")
@@ -37,10 +36,10 @@ public class ProvidedCoupon {
     @JoinColumn(name = "coupon_id", nullable = false)
     private Coupon coupon;
 
-    @Column(name = "used_date", nullable = false)
-    private Date usedDate;
+    @Column(name = "used_date")
+    private LocalDate usedDate;
 
     @Column(name = "expired_date", nullable = false)
-    private Date expiredDate;
+    private LocalDate expiredDate;
 
 }
