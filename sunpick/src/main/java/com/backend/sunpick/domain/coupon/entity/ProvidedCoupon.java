@@ -1,6 +1,7 @@
 package com.backend.sunpick.domain.coupon.entity;
 
 import com.backend.sunpick.domain.member.entity.Member;
+import com.backend.sunpick.global.common.entity.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -22,7 +23,7 @@ import java.time.LocalDate;
 @Getter
 @SuperBuilder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class ProvidedCoupon {
+public class ProvidedCoupon extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
